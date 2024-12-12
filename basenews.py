@@ -53,7 +53,7 @@ def display_header():
     # Versi dan URL
     print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 57}v.1.0")
     print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 16}https://github.com/ZA9474/BASEnews-DDoS.git")
-    print(f"{Fore.CYAN}|{'=' + 74}|")
+    print(f"{Fore.CYAN}|{'=' * 74}|")
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
@@ -69,12 +69,14 @@ def countdown(t):
         if remaining_time > 1:
             stdout.flush()
             stdout.write(f"\r{Fore.BLUE}|  [*] {Fore.YELLOW}BASE news {Fore.WHITE} Attack'ts  {Fore.RED}{remaining_time:.2f}  {Fore.BLUE}Sec left {' ' * 26}|")
+            stdout.flush()
             stdout.write(f"\r{Fore.YELLOW}|  [*] {Fore.CYAN}BASE news {Fore.RED} Attack'ts  {Fore.GREEN}{remaining_time:.2f}  {Fore.MAGENTA}Sec left {' ' * 26}|")
+            stdout.flush() 
             stdout.write(f"\r{Fore.RED}|  [*] {Fore.YELLOW}חדשות BASE  {Fore.CYAN} ההתקפה הסתיימה!{' ' * 53}|\n")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.RED}|  [+] {Fore.YELLOW}חדשות BASE  {Fore.CYAN} ההתקפה הסתיימה!{' ' * 53}|\n")
-            print(f"{Fore.CYAN}|{'=' + 74}|")
+            print(f"{Fore.CYAN}|{'=' * 74}|")
             return
 
 # Validasi URL dan Parsing Target
