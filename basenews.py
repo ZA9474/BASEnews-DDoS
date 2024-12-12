@@ -35,15 +35,15 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 # Fungsi untuk Menampilkan Header BASE dengan Warna
 def display_header():
     header_lines = [ 
-    f"{Fore.GREEN} ██▒██▒██▒▒         ██▒▒        ██▒██▒██▒▒  ██▒██▒██▒▒
-    f"{Fore.GREEN} ██▒▒     ██▒▒     ██▒██▒▒     ██▒▒          ██▒▒
-    f"{Fore.CYAN} ██▒▒     ██▒▒    ██▒▒ ██▒▒    ██▒▒          ██▒▒
-    f"{Fore.CYAN} ██▒██▒██▒▒      ██▒▒   ██▒▒    ██▒██▒██▒▒ ██▒██▒██▒▒ 
-    f"{Fore.CYAN} ██▒▒     ██▒▒  ██▒▒     ██▒▒            ██▒▒██▒▒ 
-    f"{Fore.GREEN} ██▒▒     ██▒▒ ██▒▒██▒██▒██▒            ██▒▒██▒▒
-    f"{Fore.GREEN} ██▒▒██▒▒██▒▒██▒▒         ██▒▒  ██▒██▒██▒▒ ██▒██▒██▒▒  
-    f"{Fore.GREEN} ▒▒ ▒▒ ▒▒     ▒▒           ▒▒     ▒▒ ▒▒ ▒▒   ▒▒ ▒▒ ▒▒   
-    f"{Fore.GREEN}  ▒ ▒ ▒       ▒              ▒    ▒ ▒ ▒       ▒ ▒ ▒ ▒    
+    f"{Fore.GREEN} ██▒██▒██▒▒         ██▒▒        ██▒██▒██▒▒  ██▒██▒██▒▒",
+    f"{Fore.GREEN} ██▒▒     ██▒▒     ██▒██▒▒     ██▒▒          ██▒▒        ",
+    f"{Fore.CYAN} ██▒▒     ██▒▒    ██▒▒ ██▒▒    ██▒▒          ██▒▒        ",
+    f"{Fore.CYAN} ██▒██▒██▒▒      ██▒▒   ██▒▒    ██▒██▒██▒▒ ██▒██▒██▒▒  ", 
+    f"{Fore.CYAN} ██▒▒     ██▒▒  ██▒▒     ██▒▒            ██▒▒██▒▒        ",
+    f"{Fore.GREEN} ██▒▒     ██▒▒ ██▒▒██▒██▒██▒            ██▒▒██▒▒       ",
+    f"{Fore.GREEN} ██▒▒██▒▒██▒▒██▒▒         ██▒▒  ██▒██▒██▒▒ ██▒██▒██▒▒ ", 
+    f"{Fore.GREEN} ▒▒ ▒▒ ▒▒     ▒▒           ▒▒     ▒▒ ▒▒ ▒▒   ▒▒ ▒▒ ▒▒    ",
+    f"{Fore.GREEN}  ▒ ▒ ▒       ▒              ▒    ▒ ▒ ▒       ▒ ▒ ▒ ▒      ",
      ]
 # Tampilkan header dengan warna
     for line in header_lines:
@@ -65,12 +65,14 @@ def countdown(t):
     until = datetime.datetime.now() + datetime.timedelta(seconds=int(t))
     while True:
         remaining_time = (until - datetime.datetime.now()).total_seconds()
-        if remaining_time > 0:
+        if remaining_time > 1:
             stdout.flush()
-            stdout.write(f"\r{Fore.MAGENTA}|    [*] Attack status => {remaining_time:.2f} sec left {' ' * 26}|")
+            stdout.write(f"\r{Fore.BLUE}|  [*] {Fore.YELLOW}HUDAIRUL AQSHA {Fore.WHITE} Attack'ts  {Fore.RED}{remaining_time:.2f}  {Fore.BLUE}Sec left {' ' * 26}|")
+            stdout.write(f"\r{Fore.YELLOW}|  [*] {Fore.CYAN}HUDAIRUL AQSHA {Fore.RED} Attack'ts  {Fore.GREEN}{remaining_time:.2f}  {Fore.MAGENTA}Sec left {' ' * 26}|")
+            stdout.write(f"\r{Fore.RED}|  [*] {Fore.YELLOW}חודאירול אקשה  {Fore.CYAN}התקפה נעשתה!{' ' * 53}|\n")
         else:
             stdout.flush()
-            stdout.write(f"\r{Fore.MAGENTA}|    [*] Attack Done!{' ' * 53}|\n")
+            stdout.write(f"\r{Fore.RED}|  [*]  {Fore.YELLOW}חודאירול אקשה    {Fore.CYAN}התקפה נעשתה!{' ' * 53}|\n")
             print(f"{Fore.CYAN}|{'=' * 74}|")
             return
 
