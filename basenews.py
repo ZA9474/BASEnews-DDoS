@@ -34,16 +34,17 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 
 # Fungsi untuk Menampilkan Header BASE dengan Warna
 def display_header():
-    header_lines = [ 
-    f"{Fore.GREEN} ██▒██▒██▒▒       ███▒▒     ██▒██▒██▒▒    ██▒██▒██▒▒ ",
-    f"{Fore.GREEN} ██▒▒     ██▒▒   ██▒██▒▒    ██▒▒          ██▒▒        ",
-    f"{Fore.CYAN} ██▒▒     ██▒▒ ██▒▒  ██▒▒   ██▒▒          ██▒▒          ",
-    f"{Fore.CYAN} ██▒██▒██▒▒   ██▒▒    ██▒▒  ██▒▒          ██▒▒         ",
-    f"{Fore.CYAN} ██▒▒     ██▒▒██▒▒    ██▒▒  ██▒██▒██▒▒    ██▒██▒██▒▒  ",
-    f"{Fore.GREEN} ██▒▒     ██▒▒██▒████▒██▒▒         ██▒▒   ██▒▒         ",
-    f"{Fore.GREEN} ██▒▒██▒▒██▒▒ ██▒▒    ██▒▒  ██▒██▒██▒▒    ██▒██▒██▒▒ ",
-    f"{Fore.CYAN}   ▒▒ ▒▒ ▒▒     ▒▒      ▒▒  ▒▒ ▒▒ ▒▒      ▒▒ ▒▒ ▒▒    ",
-    f"{Fore.CYAN}     ▒ ▒ ▒       ▒        ▒   ▒ ▒ ▒        ▒ ▒ ▒ ▒      ",
+    header_lines = [
+    f"{Fore.GREEN}                                                            ",  
+    f"{Fore.GREEN}    ██▒██▒██▒▒       ███▒▒     ██▒██▒██▒▒    ██▒██▒██▒▒ ",
+    f"{Fore.GREEN}    ██▒▒     ██▒▒   ██▒██▒▒    ██▒▒          ██▒▒        ",
+    f"{Fore.CYAN}    ██▒▒     ██▒▒ ██▒▒  ██▒▒   ██▒▒          ██▒▒          ",
+    f"{Fore.CYAN}    ██▒██▒██▒▒   ██▒▒    ██▒▒  ██▒▒          ██▒▒         ",
+    f"{Fore.CYAN}    ██▒▒     ██▒▒██▒▒    ██▒▒  ██▒██▒██▒▒    ██▒██▒██▒▒  ",
+    f"{Fore.GREEN}    ██▒▒     ██▒▒██▒████▒██▒▒         ██▒▒   ██▒▒         ",
+    f"{Fore.GREEN}    ██▒▒██▒▒██▒▒ ██▒▒    ██▒▒  ██▒██▒██▒▒    ██▒██▒██▒▒ ",
+    f"{Fore.CYAN}      ▒▒ ▒▒ ▒▒     ▒▒      ▒▒  ▒▒ ▒▒ ▒▒      ▒▒ ▒▒ ▒▒    ",
+    f"{Fore.CYAN}        ▒ ▒ ▒       ▒        ▒   ▒ ▒ ▒        ▒ ▒ ▒ ▒      ",
      ]
 # Tampilkan header dengan warna
     for line in header_lines:
