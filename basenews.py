@@ -43,8 +43,8 @@ def display_header():
     f"{Fore.CYAN}    ██▒▒     ██▒▒  ██▒▒    ██▒▒   ██▒██▒██▒▒   ██▒██▒██▒▒  ",
     f"{Fore.GREEN}    ██▒▒     ██▒▒  ██▒████▒██▒▒          ██▒▒  ██▒▒         ",
     f"{Fore.GREEN}    ██▒▒██▒▒██▒▒   ██▒▒    ██▒▒   ██▒██▒██▒▒   ██▒██▒██▒▒ ",
-    f"{Fore.CYAN}      ▒▒ ▒▒ ▒▒     ▒▒      ▒▒  ▒▒ ▒▒ ▒▒     ▒▒ ▒▒ ▒▒    ",
-    f"{Fore.CYAN}        ▒ ▒ ▒       ▒        ▒   ▒ ▒ ▒       ▒ ▒ ▒ ▒      ",
+    f"{Fore.CYAN}      ▒▒ ▒▒ ▒▒      ▒▒      ▒▒   ▒▒ ▒▒ ▒▒     ▒▒ ▒▒ ▒▒    ",
+    f"{Fore.CYAN}        ▒ ▒ ▒        ▒        ▒    ▒ ▒ ▒       ▒ ▒ ▒ ▒      ",
      ]
 # Tampilkan header dengan warna
     for line in header_lines:
