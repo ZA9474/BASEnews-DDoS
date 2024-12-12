@@ -70,10 +70,10 @@ def countdown(t):
             stdout.flush()
             stdout.write(f"\r{Fore.BLUE}|  [*] {Fore.YELLOW}BASE news {Fore.WHITE} Attack'ts  {Fore.RED}{remaining_time:.2f}  {Fore.BLUE}Sec left {' ' * 26}|")
             stdout.write(f"\r{Fore.YELLOW}|  [*] {Fore.CYAN}BASE news {Fore.RED} Attack'ts  {Fore.GREEN}{remaining_time:.2f}  {Fore.MAGENTA}Sec left {' ' * 26}|")
-            stdout.write (f "\ r {fore.red} | [ *] {fore.yellow}. חדשות בסיס {fore.cyan} סיום התקפה! {'' * 53} | \ n")
+            stdout.write (f "\ r {Fore.RED}|  [*] {Fore.YELLOW}  חדשות בסיס {Fore.CYAN} סיום התקפה! {'' * 53} |\n")
         else:
             stdout.flush()
-            stdout.write (f "\ r {fore.red} | [ *] {fore.yellow}. חדשות בסיס {fore.cyan} סיום התקפה! {'' * 53} | \ n")
+            stdout.write (f "\ r {Fore.RED}|  [*] {Fore.YELLOW}  חדשות בסיס {Fore.CYAN} סיום התקפה! {'' * 53} |\n")
             print(f"{Fore.CYAN}|{'=' * 74}|")
             return
 
